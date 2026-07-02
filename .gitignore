@@ -1,0 +1,20 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# CDK outputs
+cdk.out/
+.env
+.env.*
+*.log
+
+# Rust builds
+lambdas/target/
+target/
+**/*.rs.bk
+
+# OS and IDEs
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

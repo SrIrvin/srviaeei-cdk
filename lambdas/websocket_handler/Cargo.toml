@@ -1,0 +1,15 @@
+[package]
+name = "websocket_handler"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lambda_runtime = "0.13.0"
+aws-config = { version = "1.5.0", features = ["behavior-version-latest"] }
+aws-sdk-dynamodb = "1.52.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+aws_lambda_events = { version = "0.15.0", default-features = false, features = ["apigw"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt"] }
